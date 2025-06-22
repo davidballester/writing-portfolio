@@ -1,0 +1,15 @@
+:root {
+  --playful-gradient: linear-gradient(45deg, #e38e26, #d96523);
+  --playful-gradient-alternative: linear-gradient(45deg, #d96523, #e38e26);
+}
+
+.playful-text {
+  background: var(--playful-gradient);
+  background-clip: text;
+  color: transparent;
+
+  &.variant {
+    background: var(--playful-gradient-alternative);
+    background-clip: text;
+  }
+}
