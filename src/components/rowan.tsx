@@ -2,6 +2,7 @@ import { Box, Button, Image, Stack, Text, VStack } from "@chakra-ui/react";
 import { Outfit } from "next/font/google";
 import { ContentContainer } from "./contentContainer";
 import { ReactNode } from "react";
+import { FaAmazon } from "react-icons/fa";
 
 const outfit = Outfit({ subsets: ["latin"], weight: "400" });
 
@@ -53,7 +54,15 @@ export function Rowan() {
               _hover: 0.6,
             }}
           >
-            Próximamente a la venta
+            <a
+              href="https://www.amazon.es/dp/B0FFJ4TJFJ/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&sr=8-1"
+              target="blank"
+            >
+              <FaAmazon
+                style={{ display: "inline-block", marginRight: "1rem" }}
+              />
+              Amazon
+            </a>
           </Button>
         </VStack>
       </ContentContainer>
